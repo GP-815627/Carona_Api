@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_700">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Corona Virus"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="5dp"
+                android:layout_alignParentEnd="true"
+                app:cardElevation="3dp">
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:background="#FD9C0E"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="o приложени"
+                        android:id="@+id/imageView"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="10dp"></TextView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/imageView"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_chevron_right_24"
+                        android:layout_gravity="center"></ImageView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape"
+        android:padding="10dp"
+        android:hint="Поиск..."
+        android:drawableRight="@drawable/ic_round_search_24"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext1"></EditText>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle1"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
